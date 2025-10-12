@@ -11,7 +11,7 @@
     <!--fontawesome fonts cdn-->
     <script src="https://kit.fontawesome.com/81677628fa.js" crossorigin="anonymous"></script>
     <!--Taikwind CSS Fonts--->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
      <script>
     tailwind.config = {
       theme: {
@@ -25,24 +25,49 @@
   </script>
   <style>
     .manrope {
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
   </style>
 </head>
-<body class="manrope">
-    <div class="flex-auto">
-      <h3>consectetur adipisicing elit. Quibusdam, atque?</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-         Perspiciatis iste debitis delectus voluptatum dolore quod error molestiae, 
-         ex magni, minus consectetur qui esse. Dolorem repellendus excepturi incidunt 
-         placeat atque error eligendi ipsam! Iste pariatur, est nobis nulla ratione totam a. 
-         Quae accusantium voluptatum eius dicta in delectus corrupti impedit repellat.</p>
-    </div>
-    <div>
-      <img src="images/fresh-1.png"  alt="">
-    </div>
+<body class="manrope ">
+  <!-- main content -->
+    <main class="manrope max-w-screen-xl mx-auto px-4 py-5 md:py-10 lg:py-12">
+      <!-- header section -->
+      <header class=" md:flex items-center">
+        <!-- text content -->
+          <div class="">
+              <div class="text-center md:text-left lg:text-left">
+                <h1 class="text-3xl md:text-3xl lg:text-5xl font-bold  ">It's good <br>tea time at The <br>Tea House</h1>
+                <p class="max-w-lg text-gray-500 py-4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+              </div>
+              <div class="md:max-w-52 text-center md:text-left lg:text-left ">
+                <button class="bg-gradient-to-r from-orange-500 to-red-500  text-white rounded-md py-2 px-2 md:py-3 lg:py-4 md:px-3 lg:px-4 font-bold">Explore More <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                </button>
+            </div>
+         </div>
+         <!-- image content -->
+         <div class="relative">
+              <!-- image -->
+              <div class="h-auto w-auto">
+                <img src="images/banner.png" alt="">
+              </div>
+              <!-- card -->
+              <div class="absolute flex items-center gap-4 bg-slate-50 rounded-s-md py-2 px-2 md:py-5 md:px-5 md:top-80 lg:top-96  md:left-30 lg:left-28 rounded-md top-52 left-16">
+              <!-- icon -->
+              <div class="text-orange-300 text-2xl md:text-3xl lg:text-5xl">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <!-- text -->
+              <div>
+                <h2 class="font-extrabold text-2xl md:text-3xl">5.00</h2>
+                <p class="text-gray-500">Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+      </header>
+    </main>
 </body>
 </html>
